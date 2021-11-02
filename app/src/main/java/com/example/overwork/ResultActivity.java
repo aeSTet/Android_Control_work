@@ -28,7 +28,7 @@ public class ResultActivity extends AppCompatActivity {
         text = arguments.get("result").toString();
         per = (double) arguments.get("percent");
         progress.setProgress((int) (per*100));
-        switch (text){
+        /* switch (text){
             case "good":
                 res.setText(R.string.cool);
                 Image.setImageResource(R.drawable.well);
@@ -44,7 +44,7 @@ public class ResultActivity extends AppCompatActivity {
                 Image.setImageResource(R.drawable.badly);
                 //Image.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.badly));
                 break;
-        }
+        } */
 
     }
 }
