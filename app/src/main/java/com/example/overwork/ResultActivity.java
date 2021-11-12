@@ -21,30 +21,8 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        res = findViewById(R.id.result);
-        Image = findViewById(R.id.smile);
         progress = findViewById(R.id.progressBar);
-        Bundle arguments = getIntent().getExtras();
-        text = arguments.get("result").toString();
-        per = (double) arguments.get("percent");
-        progress.setProgress((int) (per*100));
-        /* switch (text){
-            case "good":
-                res.setText(R.string.cool);
-                Image.setImageResource(R.drawable.well);
-                //Image.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.well));
-                break;
-            case "normal":
-                res.setText(R.string.normal);
-                Image.setImageResource(R.drawable.normal);
-                //Image.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.normal));
-                break;
-            case "bad":
-                res.setText(R.string.bad);
-                Image.setImageResource(R.drawable.badly);
-                //Image.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.badly));
-                break;
-        } */
+
 
     }
 }
